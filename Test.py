@@ -791,8 +791,8 @@ import json
 # name="Pradyumna"
 #
 # print(name[15])
-
-from selenium.common.exceptions import *
+#
+# from selenium.common.exceptions import *
 
 # num1=float(input("Enter the num1:"))
 # num2=float(input("Enter the num2:"))
@@ -1224,337 +1224,382 @@ from selenium.common.exceptions import *
 
 # Generators
 
-
-a=[1,2,3,4]
-print(dir(a))
-
-
-# Iterators
-mytuple=("banana",'Apple','Mango')
-myiter=iter(mytuple)
-
-print(next(myiter))
-print(next(myiter))
-print(next(myiter))
-# print(next(myiter))
-
-for i in myiter:
-    print(i)
-
-# Ietrator for Strings
-
-str="banana"
-
-myiter=iter(str)
-
-print(next(myiter))
-print(myiter.__next__())
-
-print(dir(str))
-# for i in str:
-#     print(i)
-
-# Iterator Class
-
-class Mynumbers():
-    def __iter__(self):
-        self.a=1
-        return self
-
-    def __next__(self):
-        x=self.a
-        if self.a<=25:
-            self.a=self.a+1
-            return x
-        else:
-            raise StopIteration
-
-myclass=Mynumbers()
-myiter=iter(myclass)
-
-for i in myiter:
-    print(i)
-
-def Myfunc():
-    n=1
-    yield n
-
-    n=n+1
-    yield n
-
-    n=n+1
-    yield n
-
-a=Myfunc()
-
-print(next(a))
-
-
-print(next(a))
-print(next(a))
-
-
-print(next(a))
-# print(next(a))
-
-def Myfunc():
-    for i in range(25):
-        yield i
-
-
-a=Myfunc()
-print(next(a))
-print(next(a))
-print(next(a))
-
-
-
-def double(x):
-    return x*2
-
-def add(x,y):
-    return x+y
-
-def product(x,y,z):
-    return x*y*z
-
-a=double(2)
-print(a)
-
-b=add(4,5)
-print(b)
-
-c=product(2,3,4)
-print(c)
-
-#Lamda
-
-double=lambda x:x*2
-print(double(2))
-
-add=lambda x,y:x+y
-print(add(4,5))
-
-product=lambda x,y,z:x*y*z
-print(product(2,3,4))
-
-from functools import reduce
-
-
-# Map Function
-mylist=[2,3,4,5,6,7,8]
-mylist1=[8,7,6,5,4,3,2]
-
-
-a=map(lambda x:x*2,mylist)
-print(list(a))
-
-b=map(lambda x,y:x+y,mylist,mylist1)
-print(list(b))
-
-#filter fuction
-c=filter(lambda x:x%2==0,mylist)
-print(list(c))
-
-# reduce
-d=reduce(lambda x,y:x+y,mylist)
-print(d)
-
-# Nested Functions
-
-def outerfunction(text):
-    def innerfunction():
-        print(text)
-    innerfunction()
-
-outerfunction("Hello")
-
-
-def pop(list):
-    def get_last_item(my_list):
-        return my_list[len(list)-1]
-
-    list.remove(get_last_item(list))
-    return list
-
-a=[1,2,3,4]
-print(pop(a))
-print(pop(a))
-print(pop(a))
-
-# Closures
-
-def outerfunction(text):
-    def innerfunction():
-        print(text)
-    return innerfunction
-
-a=outerfunction("hello")
-# del outerfunction
-a()
-
-def nth_power(exponent):
-    def pow_of(base):
-        return pow(base,exponent)
-    return pow_of
-
-square=nth_power(2)
-print(square(2))
-
-#Decorators
-
-def decorated_func(func):
-    def wrapper_func():
-        print("x"*20)
-        func()
-        print("y"*20)
-    return wrapper_func
-
-@decorated_func
-def say_hello():
-    print("Hello World")
 #
-# hello=decorated_func(say_hello)
-# hello()
-say_hello()
-
-def decorated_X(func):
-    def wrapper_func():
-        print("x"*20)
-        func()
-        print("x"*20)
-    return wrapper_func
-
-def decorated_Y(func):
-    def wrapper_func():
-        print("y"*20)
-        func()
-        print("y"*20)
-    return wrapper_func
-
-@decorated_X
-@decorated_Y
-def say_hello():
-    print("Hello World")
-
+# a=[1,2,3,4]
+# print(dir(a))
+#
+#
+# # Iterators
+# mytuple=("banana",'Apple','Mango')
+# myiter=iter(mytuple)
+#
+# print(next(myiter))
+# print(next(myiter))
+# print(next(myiter))
+# # print(next(myiter))
+#
+# for i in myiter:
+#     print(i)
+#
+# # Ietrator for Strings
+#
+# str="banana"
+#
+# myiter=iter(str)
+#
+# print(next(myiter))
+# print(myiter.__next__())
+#
+# print(dir(str))
+# # for i in str:
+# #     print(i)
+#
+# # Iterator Class
+#
+# class Mynumbers():
+#     def __iter__(self):
+#         self.a=1
+#         return self
+#
+#     def __next__(self):
+#         x=self.a
+#         if self.a<=25:
+#             self.a=self.a+1
+#             return x
+#         else:
+#             raise StopIteration
+#
+# myclass=Mynumbers()
+# myiter=iter(myclass)
+#
+# for i in myiter:
+#     print(i)
+#
+# def Myfunc():
+#     n=1
+#     yield n
+#
+#     n=n+1
+#     yield n
+#
+#     n=n+1
+#     yield n
+#
+# a=Myfunc()
+#
+# print(next(a))
+#
+#
+# print(next(a))
+# print(next(a))
+#
+#
+# print(next(a))
+# # print(next(a))
+#
+# def Myfunc():
+#     for i in range(25):
+#         yield i
+#
+#
+# a=Myfunc()
+# print(next(a))
+# print(next(a))
+# print(next(a))
+#
+#
+#
+# def double(x):
+#     return x*2
+#
+# def add(x,y):
+#     return x+y
+#
+# def product(x,y,z):
+#     return x*y*z
+#
+# a=double(2)
+# print(a)
+#
+# b=add(4,5)
+# print(b)
+#
+# c=product(2,3,4)
+# print(c)
+#
+# #Lamda
+#
+# double=lambda x:x*2
+# print(double(2))
+#
+# add=lambda x,y:x+y
+# print(add(4,5))
+#
+# product=lambda x,y,z:x*y*z
+# print(product(2,3,4))
+#
+# from functools import reduce
+#
+#
+# # Map Function
+# mylist=[2,3,4,5,6,7,8]
+# mylist1=[8,7,6,5,4,3,2]
+#
+#
+# a=map(lambda x:x*2,mylist)
+# print(list(a))
+#
+# b=map(lambda x,y:x+y,mylist,mylist1)
+# print(list(b))
+#
+# #filter fuction
+# c=filter(lambda x:x%2==0,mylist)
+# print(list(c))
+#
+# # reduce
+# d=reduce(lambda x,y:x+y,mylist)
+# print(d)
+#
+# # Nested Functions
+#
+# def outerfunction(text):
+#     def innerfunction():
+#         print(text)
+#     innerfunction()
+#
+# outerfunction("Hello")
+#
+#
+# def pop(list):
+#     def get_last_item(my_list):
+#         return my_list[len(list)-1]
+#
+#     list.remove(get_last_item(list))
+#     return list
+#
+# a=[1,2,3,4]
+# print(pop(a))
+# print(pop(a))
+# print(pop(a))
+#
+# # Closures
+#
+# def outerfunction(text):
+#     def innerfunction():
+#         print(text)
+#     return innerfunction
+#
+# a=outerfunction("hello")
+# # del outerfunction
+# a()
+#
+# def nth_power(exponent):
+#     def pow_of(base):
+#         return pow(base,exponent)
+#     return pow_of
+#
+# square=nth_power(2)
+# print(square(2))
+#
+# #Decorators
+#
+# def decorated_func(func):
+#     def wrapper_func():
+#         print("x"*20)
+#         func()
+#         print("y"*20)
+#     return wrapper_func
+#
+# @decorated_func
+# def say_hello():
+#     print("Hello World")
+# #
+# # hello=decorated_func(say_hello)
+# # hello()
+# say_hello()
+#
+# def decorated_X(func):
+#     def wrapper_func():
+#         print("x"*20)
+#         func()
+#         print("x"*20)
+#     return wrapper_func
+#
+# def decorated_Y(func):
+#     def wrapper_func():
+#         print("y"*20)
+#         func()
+#         print("y"*20)
+#     return wrapper_func
+#
+# @decorated_X
+# @decorated_Y
+# def say_hello():
+#     print("Hello World")
+#
+# # hello=decorated_Y(decorated_X(say_hello))
+# # hello()
+# say_hello()
+#
+#
+# def decorated_add(func):
+#     def wrapper_func(a,b):
+#         print(a,b)
+#         return a+b
+#
+#     return wrapper_func
+#
+# @decorated_add
+# def add(x,y):
+#     return x+y
+#
+# print(add(5,4))
+#
+#
+#
+# # Nested Functions
+#
+# def outerfunction(text):
+#     def innerfunction():
+#         print(text)
+#     innerfunction()
+#
+# outerfunction("Hello")
+#
+#
+# def remove(list):
+#     def get_last_item(my_list):
+#         return my_list[len(list)-1]
+#
+#     list.remove(get_last_item(list))
+#     return list
+#
+# a=[1,2,3,4]
+# print(remove(a))
+# print(remove(a))
+# print(remove(a))
+#
+# #Closures
+#
+# def outerfunction(text):
+#     def innerfunction():
+#         print(text)
+#     return innerfunction
+#
+# a=outerfunction("hello World")
+# del outerfunction
+# a()
+#
+#
+# def nth_power(exponent):
+#     def pow_of(base):
+#         return pow(base,exponent)
+#     return pow_of
+#
+# square=nth_power(2)
+# print(square(3))
+# print(square(4))
+# print(square(5))
+#
+# cuberoot=nth_power(3)
+# print(cuberoot(3))
+# print(cuberoot(4))
+#
+# #Decorators
+#
+# def decorated_function(func):
+#     def wrapper_function():
+#         func()
+#     return wrapper_function
+#
+# @decorated_function
+# def say_hello():
+#     print("Hello, Welcome to the Training")
+#
+#
+# # hello=decorated_function(say_hello)
+# # hello()
+# say_hello()
+#
+#
+# def decorated_X(func):
+#     def wrapper_func():
+#         print("x"*20)
+#         func()
+#         print("x"*20)
+#     return wrapper_func
+#
+# def decorated_Y(func):
+#     def wrapper_func():
+#         print("y"*20)
+#         func()
+#         print("y"*20)
+#     return wrapper_func
+#
+# @decorated_X
+# @decorated_Y
+# def say_hello():
+#     print("Hi,Welcome to the Training")
+#
 # hello=decorated_Y(decorated_X(say_hello))
 # hello()
-say_hello()
+#
+# def decorated_add(func):
+#     def wrapper_func(a, b):
+#         print(a, b)
+#         return a + b
+#
+#     return wrapper_func
+#
+#
+# @decorated_add
+# def add(x, y):
+#     return x + y
+#
+#
+# # print(add(7, 8))
+# counter=0
+# line_lst=[]
+# with open("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files\\log.txt","r") as fh:
+#     content=fh.readlines()
+#     # print(content,end="")
+#     for line in content:
+#         # print(line,end="")
+#         if "Red" in line:
+#             a=line.replace("Red","Green")
+#             counter=counter+1
+#             line_lst.append(a)
+#
+#
+#
+# print(line_lst)
+# print("No of times the word was replaced is",counter)
+
+# counter=0
+# line_lst=[]
+#
+# with open("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files\\log.txt","r") as fh:
+#     content=fh.readlines()
+#     count=len(content)
+#     # print(count)
+#     for i in range(count):
+#         if "Red" in content[i]:
+#             a=content[i].replace("Red","Green")
+#             counter=counter+1
+#         line_lst.insert(i,a)
+#
+# print(line_lst)
+# print("No of times the word was replaced is",counter)
 
 
-def decorated_add(func):
-    def wrapper_func(a,b):
-        print(a,b)
-        return a+b
+# # Fibonacci series
+# a=int(input("Enter the first number"))
+# b=int(input("Enter the second number"))
+# n=int(input("Enter the series"))
+# while(n-2):
+#     c=a+b
+#     a=b
+#     b=c
+#     print(c,end=" ")
+#     n=n-1
 
-    return wrapper_func
-
-@decorated_add
-def add(x,y):
-    return x+y
-
-print(add(5,4))
-
-
-
-# Nested Functions
-
-def outerfunction(text):
-    def innerfunction():
-        print(text)
-    innerfunction()
-
-outerfunction("Hello")
-
-
-def remove(list):
-    def get_last_item(my_list):
-        return my_list[len(list)-1]
-
-    list.remove(get_last_item(list))
-    return list
-
-a=[1,2,3,4]
-print(remove(a))
-print(remove(a))
-print(remove(a))
-
-#Closures
-
-def outerfunction(text):
-    def innerfunction():
-        print(text)
-    return innerfunction
-
-a=outerfunction("hello World")
-del outerfunction
-a()
-
-
-def nth_power(exponent):
-    def pow_of(base):
-        return pow(base,exponent)
-    return pow_of
-
-square=nth_power(2)
-print(square(3))
-print(square(4))
-print(square(5))
-
-cuberoot=nth_power(3)
-print(cuberoot(3))
-print(cuberoot(4))
-
-#Decorators
-
-def decorated_function(func):
-    def wrapper_function():
-        func()
-    return wrapper_function
-
-@decorated_function
-def say_hello():
-    print("Hello, Welcome to the Training")
-
-
-# hello=decorated_function(say_hello)
-# hello()
-say_hello()
-
-
-def decorated_X(func):
-    def wrapper_func():
-        print("x"*20)
-        func()
-        print("x"*20)
-    return wrapper_func
-
-def decorated_Y(func):
-    def wrapper_func():
-        print("y"*20)
-        func()
-        print("y"*20)
-    return wrapper_func
-
-@decorated_X
-@decorated_Y
-def say_hello():
-    print("Hi,Welcome to the Training")
-
-hello=decorated_Y(decorated_X(say_hello))
-hello()
-
-def decorated_add(func):
-    def wrapper_func(a, b):
-        print(a, b)
-        return a + b
-
-    return wrapper_func
-
-
-@decorated_add
-def add(x, y):
-    return x + y
-
-
-print(add(7, 8))

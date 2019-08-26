@@ -319,10 +319,16 @@
 
 
 # Testcase1={1:{'name':'Prady','age':34,'gender':'Male'},2:{'name':'divakar','age':40,'gender':'Male'}}
+#
+# def hello():
+#     print("Hello")
 
-def hello():
-    print("Hello")
+a={1:{'name':'prady','age':35},2:{'name':'xxx','age':37}}
 
+for a_key,a_value in a.items():
+    print("Dictionary",a_key)
+    for key in a_value:
+        print(key,a_value[key])
 
 
 
