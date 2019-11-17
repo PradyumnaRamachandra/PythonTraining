@@ -3,12 +3,15 @@ import csv
 # row=list(csv_reader)
 # print(row)
 # next(csv_reader)
-
+lst=[]
 with open("C:\\Users\\pr57\\Desktop\\SSM\\Python\\UsersSample.csv","r")as csv_file:
     csv_reader=csv.reader(csv_file)
 
     for line in csv_reader:
-        print(line)
+        lst.append(line)
+
+    for i in lst:
+        print(i)
 #
 #     with open("C:\\Users\\pr57\\Desktop\\SSM\\Python\\new_file.csv","w")as new_file:
 #         csv_writer=csv.writer(new_file)

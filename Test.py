@@ -316,6 +316,7 @@ print(Parrot.__mro__)
 # print(x.__next__())
 # print(x.__next__())
 
+
 # Files
 
 # To write
@@ -468,6 +469,7 @@ import json
 # c.sub_method(1)
 #
 # print(C.mro())
+
 
 # Encapsulation in Python
 

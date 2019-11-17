@@ -213,16 +213,16 @@
 #         print("Hi",name)
 #
 # greet("PRady","madhu","anuj","yuvaraj","jaya","soumya","vani","surbhi")
-
-def student(name,age,**marks):
-    print("Name :",name)
-    print("Age :",age)
-    for key,value in marks.items():
-        print(key, ":",value)
-
-
-student("Prady",34,english=65,maths=45,kannada=75,hindi=55,social=85,science=75)
-
+#
+# def student(name,age,**marks):
+#     print("Name :",name)
+#     print("Age :",age)
+#     for key,value in marks.items():
+#         print(key, ":",value)
+#
+#
+# student("Prady",34,english=65,maths=45,kannada=75,hindi=55,social=85,science=75)
+#
 
 
 

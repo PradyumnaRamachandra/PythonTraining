@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../PythonPrograms/.idea/PythonPrograms.iml" filepath="$PROJECT_DIR$/../PythonPrograms/.idea/PythonPrograms.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/PythonTraining.iml" filepath="$PROJECT_DIR$/.idea/PythonTraining.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Python_Selenium/.idea/Python_Selenium.iml" filepath="$PROJECT_DIR$/../Python_Selenium/.idea/Python_Selenium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Python_Selenium_Framework/.idea/Python_Selenium_Framework.iml" filepath="$PROJECT_DIR$/../Python_Selenium_Framework/.idea/Python_Selenium_Framework.iml" />
     </modules>
   </component>
 </project>

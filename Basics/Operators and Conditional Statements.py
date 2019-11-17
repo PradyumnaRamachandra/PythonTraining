@@ -126,6 +126,8 @@ print(odd)
 odd[1:4]=[3,5,7]
 print(odd)
 
+
+
 # Append and Extend
 odd=[1,3,5]
 odd.append(7)
