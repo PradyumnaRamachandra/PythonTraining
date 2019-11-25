@@ -1001,4 +1001,34 @@ import json
 # driver.switch_to.default_content()
 # driver.close()
 #
+# import xlrd
+# workbook=xlrd.open_workbook("C:\\Users\\pr57\\Desktop\\SSM\\Python\\data.xlsx")
+# sheet=workbook.sheet_by_index(0)
+# # print(sheet.nrows)
+# # print(sheet.ncols)
+# # a=[]
+# # for col in range(sheet.ncols):
+# #     b=(sheet.cell_value(1,col))
+# #     a.append([b])
+#
+#
+#
+# a=[]
+# for i in range(sheet.nrows):
+#     a.append([])
+#     for j in range(sheet.ncols):
+#         b=sheet.cell_value(i,j)
+#         a[i].append(b)
+
+# #print(a[0][-1])
+# b=tuple(a)
+# print(b)
+
+import xlrd
+workbook=xlrd.open_workbook("C:\\Users\\pr57\\Desktop\\SSM\\Python\\Python Selenium\\Framework\\Selenium_Framework_Python-master\\Data\\TestData.xls")
+sheet=workbook.sheet_by_index(1)
+r=sheet.get_rows()
+for index,item in enumerate(r):
+    print(index,item)
+
 
