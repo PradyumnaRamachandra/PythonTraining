@@ -11,7 +11,5 @@ class Square():
         return self.side*4
 
 
-
-if __name__=="__main__":
-    s=Square(5)
-    print(s.area())
+s=Square(4)
+print(s.area())

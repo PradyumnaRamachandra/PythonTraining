@@ -1,7 +1,7 @@
 import os
 
 #print(os.getcwd())
-os.chdir("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files")
+# os.chdir("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files")
 # print(os.getcwd())
 # os.mkdir()
 #os.makedirs("OS-Demo\\sub-dir")
@@ -21,11 +21,11 @@ os.chdir("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files")
 #
 # fh.close()
 
-# for dirpath,dirname,files in os.walk("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files"):
-#     print(dirpath)
-#     print(dirname)
-#     print(files)
+for dirpath,dirname,files in os.walk("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files"):
+    print(dirpath)
+    print(dirname)
+    print(files)
 
 # print(os.environ.get("HOME"))
 #print(os.path.dirname("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files"))
-print(os.path.exists("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files"))
+# print(os.path.exists("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files"))

@@ -7,5 +7,13 @@
     <orderEntry type="module" module-name="PythonPrograms" />
     <orderEntry type="module" module-name="Python_Selenium" />
     <orderEntry type="module" module-name="Python_Selenium_Framework" />
+    <orderEntry type="module" module-name="Python_Selenium_Training" />
+    <orderEntry type="module" module-name="TaaS_Effort" />
+    <orderEntry type="module" module-name="Python_E2E" />
+    <orderEntry type="module" module-name="Selenium_PyTest" />
+    <orderEntry type="module" module-name="Selenium_Python" />
+    <orderEntry type="module" module-name="Selenium_PyTest" />
+    <orderEntry type="module" module-name="Selenium_Python" />
+    <orderEntry type="module" module-name="Selenium_Python_Framework" />
   </component>
 </module>

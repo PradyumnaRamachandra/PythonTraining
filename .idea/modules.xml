@@ -4,8 +4,14 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../PythonPrograms/.idea/PythonPrograms.iml" filepath="$PROJECT_DIR$/../PythonPrograms/.idea/PythonPrograms.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/PythonTraining.iml" filepath="$PROJECT_DIR$/.idea/PythonTraining.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Python_E2E/.idea/Python_E2E.iml" filepath="$PROJECT_DIR$/../Python_E2E/.idea/Python_E2E.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Python_Selenium/.idea/Python_Selenium.iml" filepath="$PROJECT_DIR$/../Python_Selenium/.idea/Python_Selenium.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Python_Selenium_Framework/.idea/Python_Selenium_Framework.iml" filepath="$PROJECT_DIR$/../Python_Selenium_Framework/.idea/Python_Selenium_Framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Python_Selenium_Training/.idea/Python_Selenium_Training.iml" filepath="$PROJECT_DIR$/../Python_Selenium_Training/.idea/Python_Selenium_Training.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Selenium_PyTest/.idea/Selenium_PyTest.iml" filepath="$PROJECT_DIR$/../Selenium_PyTest/.idea/Selenium_PyTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Selenium_Python/.idea/Selenium_Python.iml" filepath="$PROJECT_DIR$/../Selenium_Python/.idea/Selenium_Python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Selenium_Python_Framework/.idea/Selenium_Python_Framework.iml" filepath="$PROJECT_DIR$/../Selenium_Python_Framework/.idea/Selenium_Python_Framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TaaS_Effort/.idea/TaaS_Effort.iml" filepath="$PROJECT_DIR$/../TaaS_Effort/.idea/TaaS_Effort.iml" />
     </modules>
   </component>
 </project>

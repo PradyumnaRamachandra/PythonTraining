@@ -1,95 +1,95 @@
 # Multiple Inheritance
-
-class Person():
-
-
-
-    def __init__(self,name,age):
-        self.name=name
-        self.age=age
-
-    def show_name(self):
-        print("The name is ",self.name)
-
-    def show_age(self):
-        print("The age is",self.age)
-
-
-class Student():
-    def __init__(self,studentID):
-        self.studentID=studentID
-
-    def show_ID(self):
-        print("The Student ID is",self.studentID)
-
-
-class Address(Person,Student):
-    def __init__(self,name,age,location):
-        Person.__init__(self,name,age)
-        Student.__init__(self,location)
-        self.location=location
-
-    def show_address(self):
-        print("Location is",self.location)
-
-
-address1=Address("Prady",34,"Bangalore")
-address1.show_name()
-address1.show_age()
-address1.show_ID()
-address1.show_address()
-
-# Avoiding the Conflicts in Multiple Inheritance
-
-class Bird():
-    def __init__(self):
-        self.name="Parrot"
-    def showname(self):
-        print("Name is ",self.name)
-
-class Bird1():
-    def __init__(self):
-        self.name="Eagle"
-    def showname(self):
-        print("Name is",self.name)
-
-class Parrot(Bird,Bird1):
-    def __init__(self):
-        Bird.__init__(self)
-        Bird1.__init__(self)
-    def showname(self):
-        print("Name is",self.name)
-
-
-p=Parrot()
-p.showname()
-
-
-class Bird():
-    def __init__(self):
-        self.name="Parrot"
-    def showname(self):
-        print("Name is ",self.name)
-
-class Bird1():
-    def __init__(self):
-        self.name="Eagle"
-    def showname(self):
-        print("Name is",self.name)
-
-class Parrot(Bird,Bird1):
-    def __init__(self):
-        super().__init__()
-
-
-    def showname(self):
-        print("Name is",self.name)
-
-
-p1=Parrot()
-p1.showname()
-
-print(Parrot.__mro__)
+#
+# class Person():
+#
+#
+#
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+#
+#     def show_name(self):
+#         print("The name is ",self.name)
+#
+#     def show_age(self):
+#         print("The age is",self.age)
+#
+#
+# class Student():
+#     def __init__(self,studentID):
+#         self.studentID=studentID
+#
+#     def show_ID(self):
+#         print("The Student ID is",self.studentID)
+#
+#
+# class Address(Person,Student):
+#     def __init__(self,name,age,location):
+#         Person.__init__(self,name,age)
+#         Student.__init__(self,location)
+#         self.location=location
+#
+#     def show_address(self):
+#         print("Location is",self.location)
+#
+#
+# address1=Address("Prady",34,"Bangalore")
+# address1.show_name()
+# address1.show_age()
+# address1.show_ID()
+# address1.show_address()
+#
+# # Avoiding the Conflicts in Multiple Inheritance
+#
+# class Bird():
+#     def __init__(self):
+#         self.name="Parrot"
+#     def showname(self):
+#         print("Name is ",self.name)
+#
+# class Bird1():
+#     def __init__(self):
+#         self.name="Eagle"
+#     def showname(self):
+#         print("Name is",self.name)
+#
+# class Parrot(Bird,Bird1):
+#     def __init__(self):
+#         Bird.__init__(self)
+#         Bird1.__init__(self)
+#     def showname(self):
+#         print("Name is",self.name)
+#
+#
+# p=Parrot()
+# p.showname()
+#
+#
+# class Bird():
+#     def __init__(self):
+#         self.name="Parrot"
+#     def showname(self):
+#         print("Name is ",self.name)
+#
+# class Bird1():
+#     def __init__(self):
+#         self.name="Eagle"
+#     def showname(self):
+#         print("Name is",self.name)
+#
+# class Parrot(Bird,Bird1):
+#     def __init__(self):
+#         super().__init__()
+#
+#
+#     def showname(self):
+#         print("Name is",self.name)
+#
+#
+# p1=Parrot()
+# p1.showname()
+#
+# print(Parrot.__mro__)
 
 
 # class Person():
@@ -1604,4 +1604,35 @@ import json
 #     b=c
 #     print(c,end=" ")
 #     n=n-1
+#
+# n=121
+# temp=n
+# rev=0
+# while (n>0):
+#     dig=n%10
+#     rev=rev*10+dig
+#     n=n//10
+# print(rev)
+# #
+# num=1
+# num1=2
+# n=10
+# while(n-2):
+#     c=num+num1
+#     num=num1
+#     num1=c
+#     print(c,end=" ")
+#     n=n-1
+# import json
+# a={
+#     'name': 'Prady',
+#     'age':33,
+#     'marks':[67,55,88,56],
+#     'pass':True
+# }
+#
+# json_str=json.dumps(a)
+# json_value=json.loads(json_str)
+# print(json_value['marks'])
+
 

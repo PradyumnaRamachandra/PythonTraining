@@ -2,7 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Python_E2E" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Python_Selenium" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Python_Selenium_Framework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Selenium_PyTest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Selenium_Python" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Selenium_Python_Framework" vcs="Git" />
   </component>
 </project>
