@@ -8,14 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79d0e1d6-8ffd-4aa6-9d8e-7a4f805cb38d" name="Default" comment="Updated Framework">
       <change beforePath="$PROJECT_DIR$/../PythonPrograms/.idea/PythonPrograms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../PythonPrograms/.idea/PythonPrograms.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PythonTraining.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonTraining.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Advanced/MyModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/Advanced/MyModule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Advanced/UnderstandingMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/Advanced/UnderstandingMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python_Files/OS_Module.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Files/OS_Module.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Python_Selenium/sampleUnittest/Testcase.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_Selenium/sampleUnittest/Testcase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Python_Selenium/unittestPackage/TestSuiteDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_Selenium/unittestPackage/TestSuiteDemo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Selenium_PyTest/.idea/Selenium_PyTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Selenium_PyTest/.idea/Selenium_PyTest.iml" afterDir="false" />
@@ -35,8 +27,8 @@
       <file leaf-file-name="PythonRevision.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PythonRevision.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="553" column="22" lean-forward="true" selection-start-line="553" selection-start-column="22" selection-end-line="553" selection-end-column="22" />
+            <state relative-caret-position="577">
+              <caret line="555" column="24" lean-forward="true" selection-start-line="555" selection-start-column="24" selection-end-line="555" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -512,24 +504,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1875" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50130206" side_tool="true" weight="0.38206896" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32968536" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986979" visible="true" weight="0.35034484" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986979" visible="true" weight="0.35034484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32965517" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986207" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32968536" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1875" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986979" visible="true" weight="0.35034484" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3986207" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50130206" side_tool="true" weight="0.38206896" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32965517" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32965517" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
     </layout>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -759,9 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -769,46 +769,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Selenium_Python/Basics/findElementsTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-238" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Selenium_Python/Basics/GreenKart_TC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../Selenium_Python/Basics/Locators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../Selenium_Python/Basics/EndToEnd_TC.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462">
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-462" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Selenium_Python/Basics/Demo.py">
@@ -816,20 +793,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Selenium_Python/Basics/waitDemo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-198" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Selenium_Python/Basics/findElementsCheckBox.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-132" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Basics/Operators and Conditional Statements.py">
@@ -883,8 +852,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonRevision.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="553" column="22" lean-forward="true" selection-start-line="553" selection-start-column="22" selection-end-line="553" selection-end-column="22" />
+        <state relative-caret-position="577">
+          <caret line="555" column="24" lean-forward="true" selection-start-line="555" selection-start-column="24" selection-end-line="555" selection-end-column="24" />
         </state>
       </provider>
     </entry>
