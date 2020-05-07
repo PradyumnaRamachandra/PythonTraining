@@ -487,72 +487,299 @@
 # print(Employee.is_workday(my_date))
 
 ##--------> Inheritance
-
-class Employee():
-
-    #Class Variables
-    raise_amount=1.04
-
-    def __init__(self,first,last,pay):
-        self.first=first
-        self.last=last
-        self.pay=pay
-        self.email=first+'.'+last+'@company.com'
-
-
-    def fullname(self):
-        return f'{self.first} {self.last}'
-
-    def apply_raise(self):
-        self.pay=int(self.pay * self.raise_amount)
-
-class Tester(Employee):
-    raise_amount = 1.10
-
-    def __init__(self,first,last,pay,skill_set):
-        super().__init__(first,last,pay)
-        self.skill_set=skill_set
-
-class Manager(Employee):
-
-    raise_amount = 2.05
-
-    def __init__(self,first,last,pay,employees=None):
-        super().__init__(first,last,pay)
-        if employees is None:
-            self.employess=[]
-        else:
-            self.employees=employees
-
-    def add_emp(self,emp):
-        if emp not in self.employees:
-            self.employees.append(emp)
-
-    def remove_emp(self,emp):
-        if emp in self.employees:
-            self.employees.remove(emp)
-
-    def print_emp(self):
-        for emp in self.employees:
-            print('--->',emp.fullname())
-
-
-test_1=Tester("Pradyumna","Ramachandra",78000,"Selenium")
-test_2=Tester("Sandhya","Chandrasekhara",98000,"UFT")
 #
-# # print(help(Tester))
-# # print(test_1.pay)
-# # test_1.apply_raise()
-# # print(test_1.pay)
-# # print(Employee.raise_amount)
+# class Employee():
 #
-# print(test_1.skill_set)
-# print(test_2.skill_set)
-
-manager1=Manager("Kaushik","Ray",5000,[test_1])
-print(manager1.email)
+#     #Class Variables
+#     raise_amount=1.04
+#
+#     def __init__(self,first,last,pay):
+#         self.first=first
+#         self.last=last
+#         self.pay=pay
+#         self.email=first+'.'+last+'@company.com'
+#
+#
+#     def fullname(self):
+#         return f'{self.first} {self.last}'
+#
+#     def apply_raise(self):
+#         self.pay=int(self.pay * self.raise_amount)
+#
+# class Tester(Employee):
+#     raise_amount = 1.10
+#
+#     def __init__(self,first,last,pay,skill_set):
+#         super().__init__(first,last,pay)
+#         self.skill_set=skill_set
+#
+# class Manager(Employee):
+#
+#     raise_amount = 2.05
+#
+#     def __init__(self,first,last,pay,employees=None):
+#         super().__init__(first,last,pay)
+#         if employees is None:
+#             self.employess=[]
+#         else:
+#             self.employees=employees
+#
+#     def add_emp(self,emp):
+#         if emp not in self.employees:
+#             self.employees.append(emp)
+#
+#     def remove_emp(self,emp):
+#         if emp in self.employees:
+#             self.employees.remove(emp)
+#
+#     def print_emp(self):
+#         for emp in self.employees:
+#             print('--->',emp.fullname())
+#
+#
+# test_1=Tester("Pradyumna","Ramachandra",78000,"Selenium")
+# test_2=Tester("Sandhya","Chandrasekhara",98000,"UFT")
+# #
+# # # print(help(Tester))
+# # # print(test_1.pay)
+# # # test_1.apply_raise()
+# # # print(test_1.pay)
+# # # print(Employee.raise_amount)
+# #
+# # print(test_1.skill_set)
+# # print(test_2.skill_set)
+#
+# manager1=Manager("Kaushik","Ray",5000,[test_1])
+# print(manager1.email)
+# # manager1.print_emp()
+#
+# manager1.add_emp(test_2)
 # manager1.print_emp()
 
-manager1.add_emp(test_2)
-manager1.print_emp()
+# Encapsulation
+#
+# class Car():
+#
+#     def __init__(self,color,speed):
+#         self.__speed=speed
+#         self.color=color
+#
+#     def set_speed(self,value):
+#         self.__speed=value
+#
+#     def get_speed(self):
+#         return self.__speed
+#
+# ford=Car("Red",130)
+# # print(ford._Car__speed)
+# ford.set_speed(150)
+# print(ford.get_speed())
+# print(ford._Car__speed)
+# Car.__speed=170
+# ford.get_speed()
 
+## @property getter and setter
+#
+# class Employee():
+#     def __init__(self,first,last,pay):
+#         self.first=first
+#         self.last=last
+#         self.pay=pay
+#
+#     @property
+#     def email(self):
+#         return '{}.{}@email.com'.format(self.first,self.last)
+#
+#     @property
+#     def fullname(self):
+#         return '{} {}'.format(self.first,self.last)
+#
+#     @fullname.setter
+#     def fullname(self,name):
+#         first, last=name.split(' ')
+#         self.first=first
+#         self.last=last
+#
+#     @fullname.deleter
+#     def fullname(self):
+#         print('Deleting Name !!!')
+#         self.first = None
+#         self.last = None
+#
+# emp1=Employee("Pradyumna","Ramachandra",75000)
+# print(emp1.email)
+# print(emp1.fullname)
+#
+# emp1.first="Sandy"
+# # print(emp1.email)
+# # print(emp1.fullname)
+# # emp1.fullname="Corey Schafer"
+# print(emp1.email)
+# # print(emp1.fullname)
+
+### Abstraction
+#
+# from abc import ABC,abstractmethod
+#
+# class Shape(ABC):
+#
+#     @abstractmethod
+#     def area(self):
+#         pass
+#
+#     @abstractmethod
+#     def perimeter(self):
+#         pass
+#
+# class Square(Shape):
+#
+#     def __init__(self,side):
+#         self.side=side
+#
+#     def area(self):
+#         print(self.side*self.side)
+#
+#     def perimeter(self):
+#         print(self.side*4)
+#
+# s=Square(4)
+# s.area()
+
+## Composition  PArt of Relation
+#
+# class Salary():
+#     def __init__(self,pay,bonus):
+#         self.pay=pay
+#         self.bonus=bonus
+#
+#     def annual_salary(self):
+#         print(self.pay*12+self.bonus)
+#
+# class Employee():
+#     def __init__(self,name,age,pay,bonus):
+#         self.name=name
+#         self.age=age
+#         self.obj_salary=Salary(pay,bonus)
+#
+#     def total_Salary(self):
+#         print(self.obj_salary.annual_salary())
+#
+# e1=Employee("Prady",34,70000,15000)
+# e1.total_Salary()
+
+## Aggregation ::  Has a Relationship
+#
+# class Salary():
+#     def __init__(self,pay,bonus):
+#         self.pay=pay
+#         self.bonus=bonus
+#
+#     def annual_salary(self):
+#         print(self.pay*12+self.bonus)
+#
+# class Employee():
+#     def __init__(self,name,age,salary):
+#         self.name=name
+#         self.age=age
+#         self.obj_salary=salary
+#
+#     def total_salary(self):
+#         return self.obj_salary.annual_salary()
+#
+# salary=Salary(75000,15000)
+# emp1=Employee("Prady",34,salary)
+# print(emp1.total_salary())
+
+## Exception Handling
+
+
+from selenium.common.exceptions import *
+
+
+# str="Pradyumna"
+# try:
+#     print(str[1])
+# except ArithmeticError as e:
+#     print("Exception",e)
+# except IndexError as e:
+#     print(e)
+# else:
+#     print("No Exception")
+# finally:
+#     print("Finally block being executed")
+
+# class CoffeeCup():
+#     def __init__(self,temperature):
+#         self.temperature=temperature
+#
+#     def drink_coffee(self):
+#         if self.temperature>85:
+#             raise Exception("Coffee is too hot")
+#         elif self.temperature<65:
+#             raise Exception("Coffee is too cold")
+#         else:
+#             print("Enjoy your coffee")
+#
+# c=CoffeeCup(95)
+# c.drink_coffee()
+
+## Working with Text Files
+#
+# with open("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files\\test.txt","r")as fh:
+#    # f_contents=fh.read()
+#    f_contents=fh.readlines()
+#    for line in f_contents:
+#        print(line,end='')
+
+#
+# #Memory efficient
+# with open("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files\\test.txt","r")as fh:
+#     size_to_read=10
+#     fh_contents=fh.read(size_to_read)
+#
+#     while len(fh_contents)>0:
+#         print(fh_contents,end="")
+#         fh_contents = fh.read(size_to_read)
+
+# with open("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files\\test2.txt","w")as fh:
+#     for i in range(25):
+#         fh.write("This is line%d\n"%(i+1))
+
+### Working with multiple files
+# with open("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files\\test2.txt","r")as fr:
+#     with open("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files\\test.txt","w")as fw:
+#         for line in fr:
+#             fw.write(line)
+
+import json
+# # a={
+# #     'name':'Prady',
+# #     'age':34,
+# #     'marks':[45,55,67,88,98],
+# #     'pass':'True'
+# #   }
+# #
+# # with open("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files\\demo.json","w") as fh:
+# #     fh.write(json.dumps(a,indent=2))
+#
+# with open("C:\\Users\\pr57\\Desktop\\SSM\\Python\\PythonCourse\\Files\\demo.json","r") as fh:
+#    json_value=json.load(fh)
+#    for key,value in json_value.items():
+#        print(key,value)
+#
+# with open("C:/Users/pr57/Desktop/SSM/Python/PythonCourse/Files/example_2.json","r")as fh:
+#     data=json.load(fh)
+#     # for key,value in data['quiz']['sport']['q1'].items():
+#     #     print(key+":",value)
+#     for key,value in data['quiz']['maths'].items():
+#         print(key+"-",value)
+
+# import json
+# from urllib.request import urlopen
+#
+# with urlopen("http://dummy.restapiexample.com/api/v1/employees")as response:
+#     source=response.read()
+#
+# data=json.loads(source)
+#
+# print(json.dumps(data,indent=2))
