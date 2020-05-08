@@ -751,7 +751,7 @@ from selenium.common.exceptions import *
 #         for line in fr:
 #             fw.write(line)
 
-import json
+# import json
 # # a={
 # #     'name':'Prady',
 # #     'age':34,
@@ -783,3 +783,244 @@ import json
 # data=json.loads(source)
 #
 # print(json.dumps(data,indent=2))
+
+# # iterators
+# mytuple=('apple','banana','mango','orange')
+# myiter=iter(mytuple)
+# print(myiter.__next__())
+# print(next(myiter))
+# print(next(myiter))
+# print(next(myiter))
+# print(next(myiter))
+#
+# mystr="Banana"
+# myit=iter(mystr)
+#
+# print(next(myit))
+
+
+#iterator class
+#
+# class mynumbers():
+#
+#     def __iter__(self):
+#         self.a=1
+#         return self
+#
+#     def __next__(self):
+#         x=self.a
+#         if x<=25:
+#             self.a+=1
+#             return x
+#         else:
+#             raise StopIteration
+#
+# a=mynumbers()
+# myiter=iter(a)
+#
+# for i in myiter:
+#     print(i)
+
+# Generators
+
+# def my_function():
+#     n=1
+#     yield n
+#
+#     n=n+1
+#     yield n
+#
+#     n=n+1
+#     yield n
+#
+# a=my_function()
+#
+# print(next(a))
+# str="banana"
+# for i in str:
+#     print(i)
+#
+# print(next(a))
+
+# def my_function():
+#     for i in range(5):
+#         yield i
+#
+# a=my_function()
+# for i in a:
+#     print(i)
+
+# a=[3,4,10]
+# generator=( x**2 for x in a)
+# print(generator)
+# print(next(generator))
+# print(next(generator))
+
+
+#Lambda
+
+# def double(x):
+#     return x*2
+#
+# def add(x,y):
+#     return x+y
+#
+# a=double(2)
+# print(a)
+#
+# double=lambda x:x*2
+# print(double(2))
+#
+# add=lambda x,y:x+y
+# print(add(4,5))
+
+# #Map function
+#
+# def length(n):
+#     return len(n)
+#
+# a=map(length,['apple','banana'])
+# print(list(a))
+# list1=[1,2]
+# list2=[3,4]
+# b=map(lambda x,y:x+y,list1,list2)
+# print(tuple(b))
+
+#Closures
+
+# def outer_func():
+#     message="Hi"
+#     def inner_func():
+#         print(message)
+#     return inner_func
+#
+# myfunc=outer_func()
+# myfunc()
+#
+# def outerfunc(msg):
+#     def innerfunc():
+#         print(msg)
+#     return innerfunc
+#
+# hi_func=outerfunc("Hi")
+# hello_func=outerfunc("Hello")
+#
+# hi_func()
+# hello_func()
+
+# def wrapperfunc(func):
+#     def innerfunc(*args):
+#         print(func(*args))
+#     return innerfunc
+#
+# def add(x,y):
+#     return x+y
+#
+# adder_func=wrapperfunc(add)
+# adder_func(5,6)
+
+# Decorators
+#
+# def decorator_func(func):
+#     def wrapper_func(*args,**kwargs):
+#         return func(*args,**kwargs)
+#     return wrapper_func
+#
+# @decorator_func
+# def display():
+#     print("display function ran")
+#
+# @decorator_func
+# def display_info(name,age):
+#     print("display info ran with {},{}".format(name,age))
+
+# decorated_display=decorator_func(display)
+# decorated_display()
+
+#
+# display()
+# display_info("Prady",34)
+
+#
+# class decorator_class():
+#
+#     def __init__(self,original_func):
+#         self.original_func=original_func
+#
+#     def __call__(self, *args, **kwargs):
+#         print("call method is being executed")
+#         return self.original_func(*args,**kwargs)
+#
+#
+#
+# @decorator_class
+# def display():
+#     print("display function ran")
+#
+# @decorator_class
+# def display_info(name,age):
+#     print("display info ran with {},{}".format(name,age))
+#
+#
+# display()
+# display_info("Prady",34)
+
+#
+# def decorator_func(func):
+#     def wrapper_func(*args,**kwargs):
+#         return func(*args,**kwargs)
+#     return wrapper_func
+#
+# @decorator_func
+# def display():
+#     print("display function ran")
+#
+# @decorator_func
+# def display_info(name,age):
+#     print("display info ran with {},{}".format(name,age))
+#
+# decorated_display=decorator_func(display)
+# decorated_display()
+#
+#
+# display()
+# display_info("Prady",34)
+
+# List Comprehensions
+
+# my_list=[i for i in range(11)]
+# print(my_list)
+#
+# my_list1=[i*i for i in range(10)]
+# print(my_list1)
+
+# my_list=[i for i in range(25) if i%2==0]
+# print(my_list)
+
+# mylist=[]
+# for letter in 'abcd':
+#     for num in range(4):
+#         mylist.append((letter,num))
+#
+# print(mylist)
+#
+# mylist=[(letter,num)for letter in 'abcd' for num in range(4)]
+# print(mylist)
+
+
+## Dictionary Comprehensions
+
+# names=['bruce','clark','peter','Logan','Wade']
+# hero=['batman','Superman','Spiderman','Wolverine','DeadPool']
+#
+# # mydict={}
+# # for name,hero in zip(names,hero):
+# #     # mydict.update({name:hero})
+# #     mydict[name]=hero
+# #
+# # print(mydict)
+#
+# my_dict={name:hero for name,hero in zip(names,hero) if name!='peter'}
+# print(my_dict)
+
+
