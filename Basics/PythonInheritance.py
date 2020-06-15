@@ -16,11 +16,11 @@ x.print_name()
 
 # Create a Child Class . To achieve Inheritance pass the Parent class as a parameter into Child Class
 
-# class Student(Person):
-#     pass
-#
-# y=Student("Prady","Rama")
-# y.print_name()
+class Student(Person):
+    pass
+
+y=Student("Prady","Rama")
+y.print_name()
 
 
 #Add __init__method to child Class

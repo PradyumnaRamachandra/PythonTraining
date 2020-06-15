@@ -121,135 +121,6 @@ import timeit
 # print(b.__sizeof__())
 
 
-# Multiple Inheritance
-# class Person():
-#     def __init__(self,name,age):
-#         self.name=name
-#         self.age=age
-#
-#     def showname(self):
-#         print(self.name)
-#
-#     def showage(self):
-#         print(self.age)
-#
-# class Employee():
-#     def __init__(self,eid):
-#         self.eid=eid
-#
-#
-# class Location(Person,Employee):
-#     def __init__(self,name,age,eid,location):
-#         Person.__init__(self,name,age)
-#         Employee.__init__(self,eid)
-#         self.location=location
-#
-#     def showlocation(self):
-#         print(self.location)
-#
-# e1=Location("Prady",34,82051837,"Bangalore")
-# e1.showname()
-# e1.showage()
-# e1.showlocation()
-
-
-# class A:
-#     def __init__(self):
-#         self.name="John"
-#         self.age=23
-#
-# class B:
-#     def __init__(self):
-#         self.name="Richard"
-#         self.age=34
-#
-# class C(A,B):
-#     def __init__(self):
-#         B.__init__(self)
-#         A.__init__(self)
-#
-# c1=C()
-# print(c1.name)
-# #
-# class A():
-#     def __init__(self):
-#         self.name="Prady"
-#         self.age=23
-#
-#     def showname(self):
-#         print(self.name)
-#
-# class B():
-#     def __init__(self):
-#         self.name="Sandy"
-#         self.age=33
-#
-#       def showname(self):
-# #         print(self.name)
-#
-# class C(A,B):
-#     def __init__(self):
-#         super().__init__()
-#
-#     def showname(self):
-#         print(self.name)
-#
-# c1=C()
-# c1.showname()
-# print(C.mro())
-#
-# class A():
-#     def __init__(self):
-#         pass
-#
-#     def show(self):
-#         print("Class A")
-#
-# class B():
-#     def __init__(self):
-#         pass
-#
-#     def show(self):
-#         print("Class B")
-#
-# class C(A,B):
-#     def __init__(self):
-#         super().__init__()
-#
-#
-# c1=C()
-# c1.show()
-
-# Multilevel Inheritance
-#
-# class Person():
-#     def __init__(self):
-#         print("Initializing Class Person")
-#
-#     def showvalue(self,b):
-#         print("Printing from class Person",b)
-#
-# class student(Person):
-#     def __init__(self):
-#         print("Initializing class student")
-#         super().__init__()
-#
-#     def showvalue(self,b):
-#         print("printing from class student",b)
-#         super().showvalue(b+1)
-#
-# class learner(student):
-#     def __init__(self):
-#         print("Initializing class learner")
-#         super().__init__()
-#
-#     def showvalue(self,b):
-#         print("PRinting from class learner",b)
-#         super().showvalue(b+1)
-#
-#
-# l=learner()
-# l.showvalue(10)
 #
 # a=[1,2,3,4,5,6,7,8,9]
 #
@@ -290,3 +161,116 @@ import timeit
 #     n=n-1
 
 
+
+#
+# n=5
+#
+# for i in range(n):
+#     for j in range(i+1):
+#         print("*",end=" ")
+#     print()
+
+
+#
+# n=5
+# k=2*n-2
+# for i in range(0,n):
+#
+#     for j in range(0,k):
+#         print(end=" ")
+#     k=k-1
+#     for j in range(0,i+1):
+#         print("* ",end="")
+#     print()
+
+# #
+#
+# n=5
+# num=1
+# for i in range(1,n+1):
+#     num=1
+#     for j in range(1,i+1):
+#         print(num,end=" ")
+#         num=num+1
+#     print()
+
+#
+# a=[1,2,3,4,5,6,7,8]
+# key=2
+# start=0
+# end=len(a)
+# flag=""
+# while start<end:
+#     mid=(start+end)//2
+#     if a[mid]>key:
+#         end=mid
+#     elif a[mid]<key:
+#         start=mid+1
+#     else:
+#         print(mid)
+#         flag="found"
+#         break
+#
+# if flag=="":
+#     print("element not found ")
+#
+
+#
+#
+# def sorted_list(lst):
+#     return lst[1]
+#
+#
+# print(sorted(x,key=sorted_list))
+
+#
+# a = {'a': 4, 'b': 3, 'c': 2, 'd': 1}
+#
+# # def func(x):
+# #     print(x)
+# #
+# # func(a)
+#
+# sorted_a=sorted(a)
+# print(sorted_a)
+#
+# x = [('Bangalore', 25,9), ('Delhi', 35,7), ('Chennai', 37,5), ('Mumbai', 32,1)]
+#
+# def a(x):
+#     return x[2]
+# print(sorted(x,key=a))
+
+# a = {'a': 4, 'b': 3, 'c': 2, 'd': 1}
+# def b(x):
+#     return x[1]
+#
+# print(sorted(a.items(),key=b))
+#
+# prices = {
+#         'ACME': 45.23,
+#         'AAPL': 612.78,
+#         'IBM': 205.55,
+#         'HPQ': 37.20,
+#         'FB': 10.75
+#         }
+#
+# # a,*_,b=(sorted(prices.items(),key=lambda x:x[0]))
+# # print(a,*_,b)
+#
+# print(sorted(prices.items(),key=lambda x:x[1]))
+# print(sorted(prices.items(),key=lambda x:x[-1]))
+# a=[["fname","lastname"],['mary','lamb']]
+#
+# print(sorted(a,key=lambda x:x[1][::-1]))
+
+# a=[1,4,3,7,67,[88,99]]
+# new_list=[]
+# def max_list(x):
+#     for i in x:
+#         if type(i)==list:
+#             max_list(i)
+#         else:
+#             new_list.append(i)
+#     return max(new_list)
+#
+# print(max_list(a))
